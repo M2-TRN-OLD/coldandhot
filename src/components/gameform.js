@@ -3,6 +3,9 @@ import React from 'react';
 import './gameform.css';
 
 export default class Gameform extends React.Component {
+    static defaultProps = {
+        guessHistory: []
+      }
     constructor(props) {
         super(props);
     }
