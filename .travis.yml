@@ -1,7 +1,13 @@
 language: node_js
 node_js: node
 cache:
-  directories:
-    -node_modules
+  directories: "-node_modules"
   env:
-    - CI=true
+  - CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: qT7AM300gPDGakrU2qNYfUu9GAFDgM2eDa4eeqgv2dF1UzR4YXow/vSAcNe5VrIRp8Emg5m6ht8iqEkvBYqOzFRjBiC1Ne+6bMnQE0cZWWYv+ZHvYh6qXh+phy4j5nEydVap+XKj8jjmsxF6vxg07jzXUWWR7+svQt4Kusr2hS6vKBcElwzak9p+oVq7/jqZzZ0UPZ+4bCJIGoY1qXPayLrjbVQF48YU1jrvef+0SitQEz4BZWWWF3AiE6Vz5Nrs+hRI9UZ4nW+vSM5SlS+GU5dSoucs8UyM9ezSBoofRdu0lzMtcuH/9LskYUxa+tD3oOs69QIp1nye36IslZymSp8/nP1fgSplqDfQQ0Vi6cWd6WhAKp//38jPj5ZDHes2HtjdFpAuMpe3/Ma6i0ZLcBXyWlfGOjYU2YiB0vSC8E+9qV8C+3n/ZYgirqwBFdYq2/qDqjCKgoRiWQ1jGAaxLfDWiG4VEYiVN0TVdSwLIQL1YgSpCi1I5k0kiKb2csIVXPyj+NIfTQAG8ZCqkgApc6QK9qSXrfwq72r832kk9anuD+b036/rhi2VQayZZWLtnZsDP6bKD5uSzV9wntlJhUT9w72Rcr+oAGGTDUfd3/zV8vA9F0q6ZlEXLhcYGHp1xYafu+X5XVyUaXDnYkX0xQ+EDFZZz/yMRttpYfXuzY8=
+  app: hidden-meadow-55211
+  on:
+    repo: MissyM2/coldandhot
